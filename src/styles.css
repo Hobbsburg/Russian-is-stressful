@@ -1,0 +1,114 @@
+body {
+  background: black;
+}
+
+h1, h2 {
+  font-family: garamond,serif;
+  text-align:center;
+  color: Tomato;
+  font-weight: bold;
+}
+
+h3, p {
+  color: white;
+}
+
+.content {
+  font-size: 22px;
+}
+
+.btn-group {
+  display: flex;
+  width: 100%;
+}
+
+.btn-group button {
+  width: 20%;
+  background-color:orange;
+
+}
+
+button:hover {
+  cursor: pointer;
+  background-color:ghostwhite;
+}
+
+.button-txt {
+  display: block;
+  color: black;
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+}
+
+.syllables-container {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.syllable-button {
+  min-width: 35px;
+  font-size: 20px;
+}
+
+.firebird {
+  width: 100%;
+}
+
+.correct-img, .incorrect-img {
+  width: 100%;
+}
+
+.middle-content {
+  min-width: 200px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.centerbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+/*  align-items: center;
+  justify-content: center;
+  */width: 50%;
+}
+
+.exit {
+  font-size: 30px;
+  display: block;
+  background: white;
+  text-align: center;
+  width: 50%;
+  margin:30px auto;
+}
+
+.exit:hover {
+  background: orange;
+}
+
+.translation .content,
+.inflection .content {
+  color: white;
+
+}
+
+.next-button {
+  width: 100%;
+}
