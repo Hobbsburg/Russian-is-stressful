@@ -6,64 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./src/styles.css">
     <link href="styles.css" rel="stylesheet">
-    <body>
-      <h1>
-        WELCOME TO <br>RUSSIAN IS STRESSFUL!
-      </h1>
-      <nav class="btn-group">
-        <button>Level I
-          <span class='button-txt'>250 most common</span>
-          <span class='button-txt'>polysyllabic words</span>
-        </button>
-        <button>Level II
-          <span class='button-txt'>250 more</span>
-          <span class='button-txt'>common polysyllabic words</span>
-        </button>
-        <button>Level III
-          <span class='button-txt'>250 Verbs with</span>
-          <span class='button-txt'>shifing stress</span>
-        </button>
-        <button>Level IV
-          <span class='button-txt'>250 more verbs with</span>
-          <span class='button-txt'>shifing stress</span>
-        </button>
-        <button>Level V
-          <span class='button-txt'>Two- and three-</span>
-          <span class='button-txt'>word phrases</span>
+  </head> 
+
+  <body>
+
+    <h1>
+      WELCOME TO <br>RUSSIAN IS STRESSFUL!
+    </h1>
+      
+    <nav class="btn-group">
+      <button>Level I
+        <span class='button-txt'>250 most common</span>
+        <span class='button-txt'>polysyllabic words</span>
+      </button>
+      <button>Level II
+        <span class='button-txt'>250 more</span>
+        <span class='button-txt'>common polysyllabic words</span>
+      </button>
+      <button>Level III
+        <span class='button-txt'>250 more</span>
+        <span class='button-txt'>polysyllabic words</span>
+      </button>
+      <button>Level IV
+        <span class='button-txt'>250 Verbs with</span>
+        <span class='button-txt'>shifing stress</span>
+      </button>
+      <button>Level V
+        <span class='button-txt'>Two- and three-</span>
+        <span class='button-txt'>word phrases</span>        
+      </button>
+    </nav>
+
+    <h2>CLICK ON THE STRESSED SYLLABLE<br>YOU HAVE FOUR CHANCES!</h2>
+
+    <div class="main">
+
+      <div>
+        <img src="./src/images/FirebirdLeft.png" class="firebird left">
+      </div>
         
-        </button>
-      </nav>
-
-  
-      <h2>CLICK ON THE STRESSED SYLLABLE:</h2>
-
-      <div class="main">
-        <div>
-          <img src="./src/images/FirebirdLeft.png" class="firebird left">
+      <div class="middle-content">
+        
+        <div class="syllables-container">
         </div>
-        <div class="middle-content">
-          <div class="syllables-container">
-     
-          </div>
-          <div class="images">
+
+        <div class="images">
           <img src='./src/images/RUSSIAN_BEAR.jpeg' class='correct-img hidden' />
           <img src='./src/images/matrioshkawithtext.jpeg' class='incorrect-img hidden' data-index='0' /> 
           <img src='./src/images/Putin.jpeg' class='incorrect-img hidden' data-index='1'/>
           <img src='./src/images/hopeless.jpeg' class='incorrect-img hidden' data-index='2'/>
-        
-          </div>
+          <img src='./src/images/gameover.jpg' class='incorrect-img hidden' data-index='3'/>
+        </div>
+
         <div>
           <button class='hidden next-button'>следующее слово</button>
         </div>
-        </div>
-          <div>
-          <img src="./src/images/FirebirdRight.png" class="firebird right">
-        </div>
-  
+
       </div>
-      <a class='link exit' href='exit.html'>выйти из сайта</a>
+
+      <div>
+        <img src="./src/images/FirebirdRight.png" class="firebird right">
+      </div>
   
-      <script src="./mock-data.js"></script>
+    </div>
+
+    <a class='link exit' href='exit.html'>выйти из сайта</a>
+      
+    <script src="./mock-data.js"></script>
     <script src="./src/main.js"></script>
+
   </body>
 </html>

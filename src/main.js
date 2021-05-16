@@ -13,7 +13,8 @@ const randomize = (array) => {
     return array;
  }
  const mockdata = randomize(window.mockData)
-// For each of the items in the data,
+
+ // For each of the items in the data,
 // Crate a div, and within that div, created buttons for each syllable
 const boxes = mockData.map((data, index) => {
   const syllables = data.word.split(' ');
@@ -64,11 +65,14 @@ const hideIncorrectImages = () => {
 }
 
 console.log(firstItem)
+
 /**
  *     Event listeners
  */
 let counter = 0; 
 syllablesDiv.addEventListener("click", (e) => {
+
+  /* Russian Bear picture comes up for a correct answer */
   if (e.target.classList.contains("syllable-button")) {
     console.log(counter);
     if (e.target.dataset.key === e.target.dataset.idx) {
@@ -79,15 +83,18 @@ syllablesDiv.addEventListener("click", (e) => {
       nextButton.classList.remove('hidden');
 
     } else {
+    /* one of the four "incorrect answer" pictures come up, in sequence */  
       console.log("this is the wrong answer");
       correctImg.classList.add('hidden');
       hideIncorrectImages();
-      if (counter >= 2) {
+      if (counter === 3) {
+        incorrectImg =  imagesEl.querySelector("[data-index='3']")
+      } else if (counter === 2) {
         incorrectImg =  imagesEl.querySelector("[data-index='2']")
       } else if (counter === 1) {
-
         incorrectImg =  imagesEl.querySelector("[data-index='1']")
-      } else if (counter === 0) {
+      }
+       else if (counter === 0) {
         incorrectImg =  imagesEl.querySelector("[data-index='0']")
       }
       incorrectImg.classList.remove('hidden');
@@ -117,6 +124,5 @@ nextButton.addEventListener("click", (e) => {
   hideIncorrectImages();
   nextButton.classList.add('hidden');
   counter = 0; 
-
  
 });
